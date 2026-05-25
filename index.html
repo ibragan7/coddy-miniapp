@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Coddy — обучение программированию</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ────────────────────────────────── APP ROOT ────────────────────────────────── -->
+<div id="app">
+
+  <!-- Top bar with stats -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-stats">
+      <div class="stat-chip"><span class="stat-ico">⚡</span><span id="t-xp">0</span><span class="stat-lbl">XP</span></div>
+      <div class="stat-chip"><span class="stat-ico">🪙</span><span id="t-coins">0</span></div>
+      <div class="stat-chip"><span class="stat-ico">🔥</span><span id="t-streak">0</span></div>
+    </div>
+  </header>
+
+  <!-- Screens -->
+  <main id="screen-root">
+    <!-- Screens are mounted here -->
+  </main>
+
+  <!-- Bottom navigation -->
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-screen="home">
+      <span class="nav-ico">🏠</span>
+      <span class="nav-lbl">Главная</span>
+    </button>
+    <button class="nav-btn" data-screen="courses">
+      <span class="nav-ico">📚</span>
+      <span class="nav-lbl">Курсы</span>
+    </button>
+    <button class="nav-btn" data-screen="tests">
+      <span class="nav-ico">📝</span>
+      <span class="nav-lbl">Тесты</span>
+    </button>
+    <button class="nav-btn" data-screen="achievements">
+      <span class="nav-ico">🏆</span>
+      <span class="nav-lbl">Награды</span>
+    </button>
+    <button class="nav-btn" data-screen="profile">
+      <span class="nav-ico">👤</span>
+      <span class="nav-lbl">Профиль</span>
+    </button>
+  </nav>
+
+</div>
+
+<!-- Toast container -->
+<div id="toast-stack"></div>
+
+<!-- Content + scripts -->
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
